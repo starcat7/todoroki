@@ -182,7 +182,7 @@
           document.getElementById("pattern").value = atob(
             location.hash.replace("#", "")
           );
-          if(localStorage.getItem("y")!==""){
+          if(localStorage.getItem("y")!=""||localStorage.getItem("y")!=null){
             window.location='https://cherryrains.github.io/ycs/survey/thanks.html#'+localStorage.getItem("y");
           }
           let ID = Math.round(Math.random()*10000000)
