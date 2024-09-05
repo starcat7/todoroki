@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンケート</title>
+    <link rel="stylesheet" href="https://cherryrains.github.io/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ご協力ありがとうございます</h1>
+
+        <section>
+            <h2>ご回答証明コード</h2>
+            <p id="code">読み込み中…<br/>
+            </p>
+        </section>
+        <section>
+          <h2>コードの説明</h2>
+          <p>ご回答を証明するコードです。<br/>
+            Yahoo!クラウドソーシングの<br/>
+            既定のページに張り付けてください。
+          </p>
+        </section>
+        改めて、ご協力ありがとうございました。
+    </div>
+<script type="text/javascript">
+let EndEvidence = location.hash.replace("#", "");
+if((EndEvidence.split("-")[1])=="ABCEKLNRSTWXYZ"[Number(EndEvidence.split("-")[0])%13]){
+document.getElementById("code").innerHTML="TCU-"+(EndEvidence).toUpperCase()
+}else{
+document.getElementById("code").innerHTML="何らかの問題が発生しました。"
+}
+</script>
+</body>
+</html>
