@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>アンケート</title>
+    <link rel="stylesheet" href="https://cherryrains.github.io/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="root">
+        <main class="contact_main">
+          <h1 class="contact_h1">アンケート質問</h1>
+          <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeaOLfEJb10qjmj2UabvxmIAlsqIRitoVyP1y4EHqGENbyGmg/formResponse"
+            class="contact_form"
+            method="post"
+            target="hidden_iframe"
+            onsubmit="submitted=true;"
+          >
+            <label class="form_block">
+              <input
+                name="entry.1485679379"
+                id="pattern"
+                type="hidden"
+                value="incorrect"
+                class="form_field"
+                placeholder=""
+                required
+              />
+            </label>
+            <label class="form_block">
+              <input
+                name="entry.598366766"
+                id="uuid"
+                type="hidden"
+                value="incorrect"
+                class="form_field"
+                placeholder=""
+                required
+              />
+            </label>
+            <div class="form_block">
+              <h2>(1/4)ご年齢</h2>
+              ※15歳未満の方はYahoo!クラウドソーシングをお使いいただけません<br />
+              <select name="entry.1108920660" class="form_field" required>
+                <option disabled selected value>選択してください</option>
+                <option class="select-option" value="13-19">15歳~19歳</option>
+                <option class="select-option" value="20代">20代</option>
+                <option class="select-option" value="30代">30代</option>
+                <option class="select-option" value="40代">40代</option>
+                <option class="select-option" value="50代">50代</option>
+                <option class="select-option" value="60代以上">60代以上</option>
+              </select>
+            </div>
+
+            <div class="form_block">
+              <h2>(2/4)ご性別</h2>
+              <select name="entry.1322986599" class="form_field" required>
+                <option disabled selected value>選択してください</option>
+                <option class="select-option" value="男性">男性</option>
+                <option class="select-option" value="女性">女性</option>
+                <option class="select-option" value="その他">その他</option>
+              </select>
+            </div>
+
+            <div class="form_block">
+              <h2>(3/4)セキュリティー意識</h2>
+              ここでは、あなたが普段どのくらい<br />
+              スマホなどの端末に対する<br />
+              安全意識があるかを教えてください。<br />
+              <table border="1">
+                <thead>
+                  <tr>
+                    <th>ﾚﾍﾞﾙ</th>
+                    <th>説明</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lv0</td>
+                    <td>まったく分からない</td>
+                  </tr>
+                  <tr>
+                    <td>Lv1</td>
+                    <td>「パスワード」などの言葉は知っている</td>
+                  </tr>
+                  <tr>
+                    <td>Lv2</td>
+                    <td>何らかのパスワードを使っている</td>
+                  </tr>
+                  <tr>
+                    <td>Lv3</td>
+                    <td>スマートフォンにロックをかけている</td>
+                  </tr>
+                  <tr>
+                    <td>Lv4</td>
+                    <td>
+                      パスワードは8桁以上の英数字にする、<br />または指紋認証を利用している
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Lv5</td>
+                    <td>任意の場合も二段階認証を設定している</td>
+                  </tr>
+                  <tr>
+                    <td>Lv6</td>
+                    <td>
+                      パスワードは12桁以上の英数字記号<br />にするよう心掛けている
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Lv7</td>
+                    <td>
+                      パスワードはランダム20桁以上などの<br />過度な安全性を求めている
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Lv8</td>
+                    <td>
+                      情報セキュリティ関係の資格<br />(基本情報技術者
+                      等)を保有している
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Lv9</td>
+                    <td>情報セキュリティの専門家である</td>
+                  </tr>
+                </tbody>
+              </table>
+              自分の現在の立ち位置に<br />
+              最も近いレベルを選択してください。<br />
+              <select name="entry.1135884167" class="form_field" required>
+                <option disabled selected value>選択してください</option>
+                <option class="select-option" value="Lv0">Lv.0</option>
+                <option class="select-option" value="Lv1">Lv.1</option>
+                <option class="select-option" value="Lv2">Lv.2</option>
+                <option class="select-option" value="Lv3">Lv.3</option>
+                <option class="select-option" value="Lv4">Lv.4</option>
+                <option class="select-option" value="Lv5">Lv.5</option>
+                <option class="select-option" value="Lv6">Lv.6</option>
+                <option class="select-option" value="Lv7">Lv.7</option>
+                <option class="select-option" value="Lv8">Lv.8</option>
+                <option class="select-option" value="Lv9">Lv.9</option>
+              </select>
+            </div>
+
+            <div class="form_block">
+              <h2>(4/4)利用歴</h2>
+              過去にスマートフォンのロックなどで<br />
+              「パターンロック」に馴染みはありますか？<br />
+              <select name="entry.349276640" class="form_field" required>
+                <option disabled selected value>選択してください</option>
+                <option class="select-option" value="N">
+                  存在を知らなかった
+                </option>
+                <option class="select-option" value="K">
+                  知っていたが使ったことはなかった
+                </option>
+                <option class="select-option" value="P">
+                  過去に使っていたことがある
+                </option>
+                <option class="select-option" value="I">今も使っている</option>
+              </select>
+            </div>
+            ありがとうございました。<br />
+            「送信」を押してコードを取得し、<br />
+            コードで認証してください。<br />
+            <button type="submit" class="form-btn">送信</button>
+          </form>
+          <script>
+            var submitted = false;
+          </script>
+          <iframe
+            name="hidden_iframe"
+            id="hidden_iframe"
+            style="displayX: none"
+            onload="if(submitted){document.cookie = `y=${ID};`;localStorage.setItem('y',ID);window.location='thanks.html#'+ID}"
+          ></iframe>
+        </main>
+        <script>
+          document.getElementById("pattern").value = atob(
+            location.hash.replace("#", "")
+          );
+          if(localStorage.getItem("y")!==""){
+            window.location='thanks.html#'+localStorage.getItem("y");
+          }
+          let ID = Math.round(Math.random()*10000000)
+          ID=String(ID)+"-"+String("ABCEKLNRSTWXYZ"[ID%13]);
+          document.getElementById("uuid").value=ID;
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
