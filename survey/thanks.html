@@ -20,8 +20,7 @@
           <p>ご回答を証明するコードです。<br/>
             Yahoo!クラウドソーシングの<br/>
             既定のページに貼り付けてください。<br/>
-            <b>また、質問では「焼きそば」をご選択ください。</b><br/>
-            <b>飲み物ところに「焼きそば」です。</b>
+            <span id="question"></span>
           </p>
         </section>
         改めて、ご協力ありがとうございました。
@@ -30,6 +29,7 @@
 let EndEvidence = location.hash.replace("#", "");
 if((EndEvidence.split("-")[1])=="ABCEKLNRSTWXYZ"[Number(EndEvidence.split("-")[0])%13]){
 document.getElementById("code").innerHTML="TCU-"+(EndEvidence).toUpperCase()
+document.getElementById("code").innerHTML="<b>また、質問では「焼きそば」をご選択ください。</b>";
 }else{
 document.getElementById("code").innerHTML="何らかの問題が発生しました。"
 }
