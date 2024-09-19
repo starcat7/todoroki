@@ -29,7 +29,7 @@
 let EndEvidence = location.hash.replace("#", "");
 if((EndEvidence.split("-")[1])=="ABCEKLNRSTWXYZ"[Number(EndEvidence.split("-")[0])%13]){
 document.getElementById("code").innerHTML="TCU-"+(EndEvidence).toUpperCase()
-document.getElementById("code").innerHTML="<b>また、質問では「焼きそば」をご選択ください。</b>";
+document.getElementById("question").innerHTML="<b>また、質問では「焼きそば」をご選択ください。</b>";
 }else{
 document.getElementById("code").innerHTML="何らかの問題が発生しました。"
 }
