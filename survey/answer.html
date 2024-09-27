@@ -12,7 +12,7 @@
         <main class="contact_main">
           <h1 class="contact_h1">アンケート質問</h1>
           <form
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeaOLfEJb10qjmj2UabvxmIAlsqIRitoVyP1y4EHqGENbyGmg/formResponse"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSe6M2NPg9WVuPPlDZFRhKDKqyRDfBkcLDv3HMUonlMQkGkhKQ/formResponse"
             class="contact_form"
             method="post"
             target="hidden_iframe"
@@ -42,10 +42,10 @@
             </label>
             <div class="form_block">
               <h2>(1/4)ご年齢</h2>
-              ※15歳未満の方はYahoo!クラウドソーシングをお使いいただけません<br />
+              <br />
               <select name="entry.1108920660" class="form_field" required>
                 <option disabled selected value>選択してください</option>
-                <option class="select-option" value="13-19">15歳~19歳</option>
+                <option class="select-option" value="13-19">13歳~19歳</option>
                 <option class="select-option" value="20代">20代</option>
                 <option class="select-option" value="30代">30代</option>
                 <option class="select-option" value="40代">40代</option>
@@ -175,7 +175,7 @@
             name="hidden_iframe"
             id="hidden_iframe"
             style="display: none"
-            onload="if(submitted){document.cookie = `y=${ID};`;localStorage.setItem('y',ID);window.location='https://cherryrains.github.io/ycs/survey/thanks.html#'+ID}"
+            onload="if(submitted){document.cookie = `y=${ID};`;localStorage.setItem('y',ID);window.location='https://starcat7.github.io/todoroki/survey/thanks.html#'+ID}"
           ></iframe>
         </main>
         <script>
@@ -183,7 +183,7 @@
             location.hash.replace("#", "")
           );
           if(localStorage.getItem("y")!=""&&localStorage.getItem("y")!=null){
-            window.location='https://cherryrains.github.io/ycs/survey/thanks.html#'+localStorage.getItem("y");
+            window.location='https://starcat7.github.io/todoroki/survey/thanks.html#'+localStorage.getItem("y");
           }
           let ID = Math.round(Math.random()*10000000)
           ID=String(ID)+"-"+String("ABCEKLNRSTWXYZ"[ID%13]);
