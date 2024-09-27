@@ -1,2 +1,2 @@
-# ycs
-Yahoo!クラウドソーシング用
+# todoroki
+校内用
